@@ -2,24 +2,26 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
+        String nome = "Fillipe Andrade";
+        String tipoConta= "Corrente";
         int opcoes;
         float conta = 2500;
         float receber;
         float pagar;
-        for (int i=0;i<=49;i++){
+        for (int i=0;i<=39;i++){
             System.out.print("*");
-            if (i==49){
+            if (i==39){
                 System.out.print("*");
                 System.out.print("\n");
             }
         }
         System.out.println("Dados iniciais do cliente:");
-        System.out.println("Nome:            Fillipe Andrade");
-        System.out.println("Tipo conta:      Corrente");
-        System.out.println("Saldo inicial:   R$ 2500,00");
-        for (int i=0;i<=49;i++){
+        System.out.println("Nome:            "+nome);
+        System.out.println("Tipo conta:      "+tipoConta);
+        System.out.println("Saldo inicial:   R$ "+conta);
+        for (int i=0;i<=39;i++){
             System.out.print("*");
-            if (i==49) {
+            if (i==39) {
                 System.out.print("*");
                 System.out.print("\n");
             }
