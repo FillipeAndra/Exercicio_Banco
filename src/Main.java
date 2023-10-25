@@ -31,26 +31,24 @@ public class Main {
             opcoes = leitor.nextInt();
             if (opcoes == 1){
                 System.out.printf("Seu saudo é de R$ %.2f\n\n", conta);
-            }
-            if (opcoes == 2){
+            }else if (opcoes == 2){
                 System.out.println("Qual o valor a ser depositado? \n");
                 receber = leitor.nextFloat();
                 conta = conta + receber;
-            }
-
-            if (opcoes == 3){
+            }else if (opcoes == 3){
                 System.out.println("Qual o valor a ser transferido? \n");
                 pagar = leitor.nextFloat();
                 if (pagar >= conta){
                     System.out.println("Você não pode transfeir um valor maior que seu saldo \n");
                 }else{
                     conta= conta - pagar;
-                    System.out.println("valor transferido\n");
+                    System.out.println("valor transferido, seu novo saldo é "+conta+"\n");
                 }
-            }
-            if (opcoes == 4){
+            }else if (opcoes == 4){
                 System.out.println("Fechando o sistema\nE saindo\n");
                 break;
+            }else{
+                System.out.println("opção invalida\n");
             }
         }
     }
